@@ -28,12 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/nanogallery2/dist/css/nanogallery2.min.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.js",
-              "node_modules/nanogallery2/dist/jquery.nanogallery2.min.js",
               "src/assets/js/TweenMax.js"
             ]
           },
