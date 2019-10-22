@@ -1,0 +1,108 @@
+
+
+
+
+  #home .wedding-date {
+    text-align: center;
+    font-family: "fira sans", sans-serif;
+    width: 100%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .wedding-date {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 200;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  @media (min-width: 768px) {
+    .wedding-date:before {
+      content: '';
+      width: 32px;
+      height: 32px;
+      background: url(../assets/images/icons/ico-bird-r.png) no-repeat center center;
+      display: inline-block;
+      position: relative;
+      top: 8px;
+      margin-right: 0px;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      left: 0;
+    }
+  }
+  @media (min-width: 768px) {
+    .wedding-date:after {
+      content: '';
+      width: 32px;
+      height: 32px;
+      background: url(../assets/images/icons/ico-bird-l.png) no-repeat center center;
+      display: inline-block;
+      position: relative;
+      top: 8px;
+      margin-left: 0px;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      right: 0;
+    }
+  }
+
+  .wedding-date .wedding-date-borders {
+    display: inline-block;
+  }
+  .wedding-date .wedding-date-borders:before {
+    content: '';
+    display: inline-block;
+    border-top: 1px solid #ffffff;
+    margin-right: 5px;
+    height: 6px;
+    opacity: 0.8;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  @media (min-width: 768px) {
+    .wedding-date .wedding-date-borders:before {
+      width: 60px;
+    }
+  }
+  .wedding-date .wedding-date-borders:after {
+    content: '';
+    display: inline-block;
+    border-top: 1px solid #ffffff;
+    margin-left: 5px;
+    height: 6px;
+    opacity: 0.8;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  @media (min-width: 768px) {
+    .wedding-date .wedding-date-borders:after {
+      width: 60px;
+    }
+  }
+  .wedding-date:hover:before {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    top: 3px;
+  }
+  .wedding-date:hover .wedding-date:after {
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    top: 3px;
+  }
+  @media (min-width: 768px) {
+    .wedding-date:hover .wedding-date-borders:before {
+      margin-right: 22px;
+    }
+  }
+  @media (min-width: 768px) {
+    .wedding-date:hover .wedding-date-borders:after {
+      margin-left: 22px;
+    }
+  }

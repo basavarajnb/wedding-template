@@ -10,7 +10,7 @@ ul, ol, li { margin: 0; padding: 0; }
   margin: 0 auto;
 }*/
 pre[class*="language-"] > code[data-language] { overflow: auto !important; }
-section { margin: 50px 0; }
+
 h1 { font-size: 45px; }
 h2 { 
   padding-top: 60px;
@@ -31,4 +31,11 @@ p {
 }
 a:focus {
   outline: 1px solid red;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: fira sans,sans-serif;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: .5em;
 }

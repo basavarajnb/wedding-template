@@ -2,3 +2,668 @@
 @import './assets/scss/base.scss';
 @import './assets/scss/home-slider.scss';
 
+
+
+#default-countdown {
+    margin: 6.375rem auto 0;
+    text-align: center;
+    width: 730px;
+  }
+  
+  .countdown-section {
+    display: inline-block;
+    border: 2px solid #fff;
+    width: 9rem;
+    height: 9rem;
+    float: none;
+    margin-left: 2.875rem;
+    color: #fff;
+    line-height: 1;
+  }
+  .countdown-section:first-child {
+    margin-left: 0;
+  }
+  .countdown-section .countdown-amount {
+    display: block;
+    font-size: 3.75rem;
+    font-family: "Prata", serif;
+    margin-top: 1rem;
+    margin-bottom: 1.375rem;
+    font-weight: 900;
+  }
+  .countdown-section .countdown-period {
+    display: block;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+@media screen and (max-width: 768px) {
+    #default-countdown {
+      width: 100%;
+      margin-top: 2.5rem;
+    }
+  
+    .countdown-section {
+      width: 6rem;
+      height: 6rem;
+    }
+    .countdown-section .countdown-amount {
+      font-size: 3rem;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+    }
+    .countdown-section .countdown-period {
+      font-size: 0.875rem;
+    }
+  }
+
+  
+  @media screen and (max-width: 541px) {
+    .countdown-wrap {
+      height: auto;
+      padding-bottom: 3.125rem;
+    }
+  
+    .countdown-section {
+      width: 80px;
+      height: 80px;
+      margin-left: 0;
+      padding: 0;
+      border: none;
+    }
+    .countdown-section .countdown-amount {
+      font-size: 2.25rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .countdown-section .countdown-period {
+      font-size: 0.75rem;
+    }
+  }
+
+
+
+
+  // couple
+
+  
+section.section-couple {
+    margin-top: 0;
+    padding-top: 8rem;
+    min-height: 100vh;
+    // background: url(assets/images/couple-bg.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+section {
+    padding: 2rem 8rem;
+    overflow: hidden;
+    position: relative;
+}
+
+section.section-couple .flowers {
+    overflow: hidden;
+}
+
+section.section-couple .flowers:after,section.section-couple .flowers:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 16rem;
+    width: 43.2vmin;
+    height: 16rem;
+    height: 43.2vmin;
+    background-image: url(assets/images/flowers.svg); // Add flower
+    background-position: center center;
+    background-size: cover;
+    opacity: .1;
+    top: -21.6vmin;
+}
+
+section.section-couple .flowers:before {
+    left: -8rem;
+    left: -21.6vmin
+}
+
+section.section-couple .flowers:after {
+    right: -8rem;
+    right: -21.6vmin
+}
+
+section.section-couple .bride-and-groom {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    position: relative
+}
+
+section.section-couple .bride-and-groom:before {
+    position: absolute;
+    content: '&';
+    display: block;
+    font-family: dancing script,cursive;
+    margin-top: 17.6%;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 4em;
+    color: #9b9b9b;
+    visibility: visible
+}
+
+section.section-couple .bride-and-groom>.bride,section.section-couple .bride-and-groom>.groom {
+    width: 44%;
+    text-align: center
+}
+
+section.section-couple .bride-and-groom>.bride .profile-pic,section.section-couple .bride-and-groom>.groom .profile-pic {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    overflow: hidden;
+    position: relative
+}
+
+section.section-couple .bride-and-groom>.bride .profile-pic:after,section.section-couple .bride-and-groom>.groom .profile-pic:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: .5em;
+    left: .5em;
+    right: .5em;
+    bottom: .5em;
+    border: 1px solid #fff;
+    visibility: visible
+}
+
+section.section-couple .bride-and-groom>.bride h3,section.section-couple .bride-and-groom>.groom h3 {
+    font-size: 1.55em;
+    margin: 0;
+    line-height: 1.25
+}
+
+section.section-couple .bride-and-groom>.bride h4,section.section-couple .bride-and-groom>.groom h4 {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 1em
+}
+
+section.section-couple .bride-and-groom>.bride p,section.section-couple .bride-and-groom>.groom p {
+    color: #9b9b9b;
+    max-width: 20em;
+    margin: 0 auto
+}
+
+section.section-couple .bride-and-groom>.bride ul.social,section.section-couple .bride-and-groom>.groom ul.social {
+    margin-top: 1em
+}
+
+section.section-couple .bride-and-groom>.bride ul.social a:link,section.section-couple .bride-and-groom>.bride ul.social a:visited,section.section-couple .bride-and-groom>.groom ul.social a:link,section.section-couple .bride-and-groom>.groom ul.social a:visited {
+    color: #9b9b9b
+}
+
+section.section-couple .bride-and-groom>.bride ul.social a:active,section.section-couple .bride-and-groom>.bride ul.social a:hover,section.section-couple .bride-and-groom>.groom ul.social a:active,section.section-couple .bride-and-groom>.groom ul.social a:hover {
+    color: #e86c6c
+}
+
+section h2:after,section h2:before {
+    position: absolute;
+    content: '';
+    display: block;
+    background-image: url(assets/images/decor.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1em;
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+
+section h2:after {
+    top: auto;
+    bottom: 0;
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+
+
+section.section-couple .bride-and-groom {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    position: relative
+}
+
+section.section-couple .bride-and-groom:before {
+    position: absolute;
+    content: '&';
+    display: block;
+    font-family: dancing script,cursive;
+    margin-top: 17.6%;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 4em;
+    color: #9b9b9b;
+    visibility: visible
+}
+
+section.section-couple .bride-and-groom>.bride,section.section-couple .bride-and-groom>.groom {
+    width: 44%;
+    text-align: center
+}
+
+section.section-couple .bride-and-groom>.bride .profile-pic,section.section-couple .bride-and-groom>.groom .profile-pic {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    overflow: hidden;
+    position: relative
+}
+
+section.section-couple .bride-and-groom>.bride .profile-pic:after,section.section-couple .bride-and-groom>.groom .profile-pic:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: .5em;
+    left: .5em;
+    right: .5em;
+    bottom: .5em;
+    border: 1px solid #fff;
+    visibility: visible
+}
+
+section.section-couple .bride-and-groom>.bride h3,section.section-couple .bride-and-groom>.groom h3 {
+    font-size: 1.55em;
+    margin: 0;
+    line-height: 1.25
+}
+
+section.section-couple .bride-and-groom>.bride h4,section.section-couple .bride-and-groom>.groom h4 {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 1em
+}
+
+section.section-couple .bride-and-groom>.bride p,section.section-couple .bride-and-groom>.groom p {
+    color: #9b9b9b;
+    max-width: 20em;
+    margin: 0 auto
+}
+
+section.section-couple .bride-and-groom>.bride ul.social,section.section-couple .bride-and-groom>.groom ul.social {
+    margin-top: 1em
+}
+
+section.section-couple .bride-and-groom>.bride ul.social a:link,section.section-couple .bride-and-groom>.bride ul.social a:visited,section.section-couple .bride-and-groom>.groom ul.social a:link,section.section-couple .bride-and-groom>.groom ul.social a:visited {
+    color: #9b9b9b
+}
+
+section.section-couple .bride-and-groom>.bride ul.social a:active,section.section-couple .bride-and-groom>.bride ul.social a:hover,section.section-couple .bride-and-groom>.groom ul.social a:active,section.section-couple .bride-and-groom>.groom ul.social a:hover {
+    color: #e86c6c
+}
+
+
+
+@media only screen and (max-width: 599px) {
+    .separator.parallax,body>footer,section.section-hero {
+        border:1rem solid #fff
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .flex-responsive {
+        display:block!important
+    }
+
+    .flex-responsive>aside,.flex-responsive>div,.flex-responsive>li,.flex-responsive>ul {
+        width: 100%!important;
+        margin: 0!important
+    }
+
+    body>nav .menu-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+        background-color: rgba(255,255,255,.95)
+    }
+
+    body>nav .menu-wrapper ul.menu {
+        padding-top: 3rem
+    }
+
+    body>nav .menu-wrapper ul.menu>li {
+        display: block
+    }
+
+    body>nav .menu-wrapper ul.menu>li+li {
+        margin-left: 0
+    }
+
+    body>nav button.open-menu {
+        display: block
+    }
+
+    body>nav:not(.opened) .menu-wrapper {
+        max-height: 3rem!important
+    }
+
+    section {
+        padding-left: 4rem;
+        padding-right: 4rem
+    }
+
+    section.section-couple .bride-and-groom:before {
+        top: 50%;
+        margin-top: 0
+    }
+
+    section.section-couple .bride-and-groom>.groom {
+        padding-bottom: 2em
+    }
+
+    section.section-couple .bride-and-groom>.bride {
+        padding-top: 8em
+    }
+
+    section.section-events ul.event-list>li .event-details .cta a.btn {
+        font-size: .7em;
+        letter-spacing: 2px;
+        padding: .8em 1.2em
+    }
+
+    section.section-events ul.event-list>li .event-thumbnail {
+        padding-top: 100%;
+        margin-bottom: 1em!important
+    }
+
+    section.section-rsvp form>.form-wrapper .right {
+        padding-top: 1em
+    }
+
+    section.section-story ul.timeline {
+        margin-top: 2em
+    }
+
+    section.section-story ul.timeline:before {
+        display: none
+    }
+
+    section.section-story ul.timeline>li .meta .date {
+        font-size: 1.5em
+    }
+
+    section.section-story ul.timeline>li svg.heart {
+        display: none
+    }
+
+    section.section-story ul.timeline>li .desc {
+        padding-left: 0;
+        padding-top: 1em
+    }
+
+    section.section-story ul.timeline>li+li {
+        margin-top: 2em
+    }
+
+    body>.main-wrapper #secondary section .gallery-overlay .gallery-modal.opened,body>section.section-gallery .gallery-overlay .gallery-modal.opened {
+        height: calc(100% - 160px)
+    }
+
+    body>.main-wrapper #secondary section .gallery-overlay .gallery-modal .overflow-wrapper,body>section.section-gallery .gallery-overlay .gallery-modal .overflow-wrapper {
+        overflow: auto;
+        height: 100%
+    }
+
+    body>.main-wrapper #secondary section .gallery-overlay .gallery-modal .modal-main .left,body>section.section-gallery .gallery-overlay .gallery-modal .modal-main .left {
+        padding-right: 0
+    }
+
+    body>.main-wrapper #secondary section .gallery-overlay .gallery-modal .modal-main .right,body>section.section-gallery .gallery-overlay .gallery-modal .modal-main .right {
+        margin-bottom: 4rem!important
+    }
+
+    .separator.parallax,body>footer {
+        padding-left: 4rem;
+        padding-right: 4rem
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .separator.parallax,body>footer,section {
+        padding-left:2rem;
+        padding-right: 2rem
+    }
+
+    section .section-intro {
+        max-width: 100%
+    }
+
+    section.section-people .col-sm-3+.col-sm-3 {
+        margin-top: 1em
+    }
+
+    section.section-events ul.event-list>li .event-details .cta a.btn {
+        display: block
+    }
+
+    section.section-events ul.event-list>li .event-details .cta a.btn+a.btn {
+        margin: 0;
+        margin-top: 1em
+    }
+
+    section.section-gallery .gallery-grid>.gallery-grid-item {
+        width: 100%
+    }
+
+    section.section-gallery header ul.gallery-cats>li {
+        display: block
+    }
+
+    section.section-gallery header ul.gallery-cats>li+li {
+        margin-left: 0
+    }
+
+    section.section-gifts .col-sm-6+.col-sm-6,section.section-gifts .retailer-list .row+.row {
+        margin-top: 1em
+    }
+
+    .separator.parallax h2 {
+        font-size: 1.5em;
+        margin-bottom: 0
+    }
+
+    .separator.parallax .decor {
+        font-size: 1.5em
+    }
+
+    .separator.parallax .countdown-area {
+        font-size: 1.25em
+    }
+
+    .separator.parallax .countdown-area ul {
+        display: block
+    }
+
+    .separator.parallax .countdown-area ul li {
+        margin: 1em 0 0
+    }
+
+    .separator.parallax .countdown-area ul li span.digits {
+        font-size: 2em
+    }
+
+    .separator.parallax .countdown-area ul li span.unit {
+        font-size: 1em
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    section.section-hero .owl-carousel.owl-theme .owl-nav.disabled+.owl-dots {
+        display:none
+    }
+
+    .separator.parallax,body>footer,section {
+        padding-left: 1rem;
+        padding-right: 1rem
+    }
+}
+
+
+.heart {
+    width: 145px;
+    height: 145px;
+    background-color: #d5d2d4;
+    overflow: hidden;
+}
+
+.heart {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(assets/images/big-heart-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 67px;
+    left: 50%;
+    margin-left: -38px;
+    margin-top: -35px;
+    position: absolute;
+    width: 71px;
+    top: -40px;
+}
+
+.heart>h1 {
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-size: 2.2rem;
+    font-weight: 300;
+    left: 2px;
+    position: absolute;
+    text-align: left;
+    text-transform: uppercase;
+    top: 6px;
+    z-index: 2;
+}
+
+.heart > img {
+    width: auto;
+    margin-left: 7px;
+    margin-top: 7px;
+}
+
+
+.separator {
+    margin: 6rem 0;
+    padding: 2rem 0;
+}
+
+section#gallery {
+    overflow: unset;
+}
+
+
+
+// Gallery
+
+
+
+.tns-controls  [data-controls*=prev], .tns-controls  [data-controls*=next] {
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    background-color: rgba(0,0,0, 0.7);
+    overflow: hidden;
+    text-indent: -9999px;
+    background-size: 2em auto!important;
+    background-repeat: no-repeat!important;
+}
+
+
+
+.tns-controls  [data-controls*=prev] {
+    left: 0;
+    transform: translateY(-50%) translateX(-50%);
+    background-image: url(assets/images/arrow-left.svg)!important;
+    background-position: 3.4em center!important;
+}
+
+
+.tns-controls  [data-controls]:hover {
+    background-color: rgba(0,0,0,.15);
+    background: #869791;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.tns-controls  [data-controls*=next] {
+    right: 0;
+    transform: translateY(-50%) translateX(50%);
+    background-image: url(assets/images/arrow-right.svg)!important;
+    background-position: .6em center!important;
+}
+
+
+
+#gallery h2:after,#gallery h2:before {
+    position: absolute;
+    content: '';
+    display: block;
+    background-image: url(assets/images/decor.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1em;
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+
+#gallery h2:after {
+    top: auto;
+    bottom: 0;
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
