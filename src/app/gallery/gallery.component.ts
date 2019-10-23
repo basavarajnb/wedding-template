@@ -40,7 +40,8 @@ export class GalleryComponent implements OnInit {
   }
 
   setGallery() {
-    $(document).ready(function () {
+
+    if (window.screen.width > 768) {
 
       $("#nanogallery2").nanogallery2({
         // ### gallery settings ### 
@@ -85,7 +86,51 @@ export class GalleryComponent implements OnInit {
         "galleryDisplayMode": "pagination",
         "thumbnailLabel": { "display": false }
       });
-    });
+
+    } else {
+      $("#nanogallery2").nanogallery2({
+        // ### gallery settings ### 
+        "thumbnailHeight": 200,
+        thumbnailWidth: 'auto',
+        itemsBaseURL: 'assets/images/gallery/',
+        thumbnailDisplayTransition: 'slideUp2',
+        thumbnailDisplayTransitionDuration: 500,
+        thumbnailDisplayInterval: 30,
+        galleryDisplayTransition: 'rotateX',
+        galleryDisplayTransitionDuration: 500,
+        "galleryDisplayMode": "pagination",
+        galleryPaginationMode: 'rectangles',
+        galleryMaxRows: 4,
+        galleryTheme: 'light',
+        colorScheme: 'light',
+        
+        "thumbnailGutterWidth": 0,
+        "thumbnailGutterHeight": 0,
+        "thumbnailLabel": { "display": false },
+        // galleryMaxItems: 10,
+
+
+        // ### gallery content ### 
+        items: [
+          { srct: 'g1t.jpg', src: 'g1.jpg', title: '' },
+          { srct: 'g12t.jpg', src: 'g12.jpg', title: '' },
+          { srct: 'g2t.jpg', src: 'g2.jpg', title: '' },
+          { srct: 'g13t.jpg', src: 'g13.jpg', title: '' },
+          { srct: 'g3t.jpg', src: 'g3.jpg', title: '' },
+          { srct: 'g15t.jpg', src: 'g15.jpg', title: '' },
+          { srct: 'g4t.jpg', src: 'g4.jpg', title: '' },
+          { srct: 'g5t.jpg', src: 'g5.jpg', title: '' },
+          { srct: 'g11t.jpg', src: 'g11.jpg', title: '' },
+          { srct: 'g6t.jpg', src: 'g6.jpg', title: '' },
+          { srct: 'g7t.jpg', src: 'g7.jpg', title: '' },
+          { srct: 'g8t.jpg', src: 'g8.jpg', title: '' },
+          { srct: 'g14t.jpg', src: 'g14.jpg', title: '' },
+          { srct: 'g16t.jpg', src: 'g16.jpg', title: '' },
+          { srct: 'g9t.jpg', src: 'g9.jpg', title: '' },
+          { srct: 'g10t.jpg', src: 'g10.jpg', title: '' },
+        ],
+      });
+    }
   }
 
 }

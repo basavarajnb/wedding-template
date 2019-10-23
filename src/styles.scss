@@ -92,7 +92,7 @@
   
 section.section-couple {
     margin-top: 0;
-    padding-top: 8rem;
+    padding-top: 4rem;
     min-height: 100vh;
     // background: url(assets/images/couple-bg.jpg) center top no-repeat;
     background-size: cover;
@@ -116,10 +116,10 @@ section.section-couple .flowers:after,section.section-couple .flowers:before {
     width: 43.2vmin;
     height: 16rem;
     height: 43.2vmin;
-    background-image: url(assets/images/flowers.svg); // Add flower
+    background-image: url(assets/images/couple-flowers.svg); // Add flower
     background-position: center center;
     background-size: cover;
-    opacity: .1;
+    opacity: .5;
     top: -21.6vmin;
 }
 
@@ -140,6 +140,7 @@ section.section-couple .bride-and-groom {
     justify-content: space-between;
     position: relative
 }
+
 
 section.section-couple .bride-and-groom:before {
     position: absolute;
@@ -214,6 +215,9 @@ section.section-couple .bride-and-groom>.bride ul.social a:active,section.sectio
     color: #e86c6c
 }
 
+
+
+
 section h2:after,section h2:before {
     position: absolute;
     content: '';
@@ -230,6 +234,14 @@ section h2:after,section h2:before {
     -o-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg)
+}
+
+#couple.section-couple > h2:after,#couple.section-couple >  h2:before {
+    background-image: url(assets/images/couple-decor.svg);
+}
+
+#events.section-events > h2:after, #events.section-events >  h2:before {
+    background-image: url(assets/images/decor.svg);
 }
 
 
@@ -670,4 +682,33 @@ section#gallery {
 
 .page-header {
     margin-bottom: 2.5rem;
+}
+
+
+.section-border {
+    box-shadow: 0 1em 1em -1em rgba(0, 0, 0, .25);
+}
+
+body {
+    background-color: rgb(255, 251, 244);
+}
+
+
+.d-flex  {
+    display: flex;
+}
+.align-items-center {
+    align-items: center;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.pr-2 {
+    padding-right: .5rem;
+}
+
+.nGY2 .nGY2GThumbnail, .nGY2 .nGY2GThumbnailStack {
+    border-color: #FAFAD2 !important;
 }
