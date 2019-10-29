@@ -50,7 +50,13 @@ export class GalleryComponent implements OnInit {
         // ### gallery content ### 
         items: [
           { srct: 'g1t.jpg', src: 'g1.jpg', title: ' 1' },
+          { srct: 'g1-1t.jpg', src: 'g1-1.jpg', title: ' 111' },
+          { srct: 'g1-2t.jpg', src: 'g1-2.jpg', title: ' 1-2' },
           { srct: 'g2t.jpg', src: 'g2.jpg', title: ' 2' },
+          { srct: 'g2-1t.jpg', src: 'g2-1.jpg', title: ' 2-1' },
+          { srct: 'g2-2t.jpg', src: 'g2-2.jpg', title: ' 2-2' },
+          { srct: 'g2-3t.jpg', src: 'g2-3.jpg', title: ' 2-3' },
+          { srct: 'g2-4t.jpg', src: 'g2-4.jpg', title: ' 2-4' },
           { srct: 'g3t.jpg', src: 'g3.jpg', title: ' 3' },
           { srct: 'g4t.jpg', src: 'g4.jpg', title: ' 4' },
           { srct: 'g5t.jpg', src: 'g5.jpg', title: ' 5' },
