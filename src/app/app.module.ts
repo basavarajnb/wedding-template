@@ -6,6 +6,7 @@ import {NgxTinySliderModule} from 'ngx-tiny-slider';
 import { CoupleComponent } from './couple/couple.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { EventsComponent } from './events/events.component';
+import { LiveComponent } from './live/live.component';
  
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { EventsComponent } from './events/events.component';
     AppComponent,
     CoupleComponent,
     GalleryComponent,
-    EventsComponent
+    EventsComponent,
+    LiveComponent
   ],
   exports: [
     NgxTinySliderModule

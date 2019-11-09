@@ -36,7 +36,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
     this.timerId =
       countdown(
-        new Date('10 November 2019 04:00 UTC'),
+        new Date('10 November 2019 01:38 UTC'),
         (ts) => {
           this.setTimer(ts);
         },
