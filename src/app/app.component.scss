@@ -424,3 +424,50 @@
     font-family: dancing script, cursive;
   }
 }
+
+
+.live-button {
+	width: 30px;
+	height: 30px;
+	font-size: 0;
+	background-color: red;
+	border: 0;
+	border-radius: 35px;
+	margin: 18px;
+	outline: none;
+}
+
+
+.rec{
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes pulse{
+	0%{
+		box-shadow: 0px 0px 5px 0px rgba(173,0,0,.3);
+	}
+	65%{
+		box-shadow: 0px 0px 5px 4px rgba(173,0,0,.5);
+	}
+	90%{
+		box-shadow: 0px 0px 5px 7px rgba(173,0,0,0);
+	}
+}
+
+.recording-notification {
+    justify-content: center;
+    display: block;
+    font-size: 3.75rem;
+    font-family: "Prata", serif;
+    margin-top: 1rem;
+    margin-bottom: 1.375rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+
+    a {
+      color: red;
+    }
+}
